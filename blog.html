@@ -55,8 +55,8 @@
           Dev<span class="font-extrabold">Board</span>
         </h1>
       </div>
-        <div id="change-bg" class="bg-bgMain cursor-pointer">
-         <button class="btn btn-primary">Back to Desk</button>
+        <div class="bg-bgMain cursor-pointer">
+         <button id="back-desk" class="btn btn-primary">Back to Desk</button>
         </div>
       
     </div>
@@ -117,5 +117,11 @@
   
   </main>
     </div>
+    <script>
+      document.getElementById("back-desk").addEventListener("click", function () {
+    console.log("hole");
+    window.location.replace("home.html");
+  });
+    </script>
   </body>
 </html>

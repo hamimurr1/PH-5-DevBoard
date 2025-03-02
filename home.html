@@ -59,9 +59,12 @@
         <div class="flex items-center gap-8">
           <div class="flex items-center gap-3 bg-bgMain py-3 px-6 rounded-full">
             <img class="w-8 h-8" src="assets/checkbox.png" alt="" />
-            <h2 id="" class="text-2xl font-bold">0</h2>
+            <h2 id="total-complete" class="text-2xl font-bold">0</h2>
           </div>
-          <div id="" class="bg-bgMain p-3 rounded-full cursor-pointer">
+          <div
+            id="color-change-box"
+            class="bg-bgMain p-3 rounded-full cursor-pointer"
+          >
             <img class="w-10 h-10" src="assets/theme-btn.png" alt="" />
           </div>
         </div>
@@ -69,162 +72,177 @@
     </header>
     <main class="container mx-auto">
       <!--Task assignment-->
-      <section class="grid grid-cols-12 bg-white mt-5">
-        <div class="flex items-center col-span-10 gap-6 justify-between">
-          <div class="p-6 bg-bgMain rounded-lg shadow-sm">
-            <div class="flex items-center gap-4">
-              <div class="p-4 bg-white rounded-full">
-                <img src="assets/checkbox.png" alt="" />
+      <section class="grid grid-cols-12 mt-5">
+        <div
+          class="flex col-span-9 gap-6 justify-between p-6 rounded-lg shadow-sm bg-white flex-col"
+        >
+          <div class="flex items-center gap-4">
+            <div class="p-6 bg-bgMain rounded-lg shadow-sm">
+              <div class="flex items-center gap-4">
+                <div class="p-4 bg-white rounded-full">
+                  <img src="assets/checkbox.png" alt="" />
+                </div>
+                <div>
+                  <h2 class="text-xl">Task Assigned</h2>
+                  <p id="task-assigned" class="text-2xl font-bold mt-2">6</p>
+                </div>
               </div>
+            </div>
+            <div
+              id="new-today"
+              class="flex-1 flex gap-4 p-6 bg-gradient-to-r from-blue-600 to-blue-300 rounded-lg shadow-sm"
+            >
+              <div><img src="/assets/board.png" alt="" /></div>
               <div>
-                <h2 class="text-xl">Task Assigned</h2>
-                <p class="text-2xl font-bold mt-2">05</p>
+                <p class="mt-2 text-xl text-white">
+                  Discover Something <br />New Today!
+                </p>
+              </div>
+            </div>
+            <div class="p-6 bg-bgMain rounded-lg shadow-sm">
+              <div class="flex items-center gap-4">
+                <div class="p-4 bg-white rounded-full">
+                  <img src="assets/calender.png" alt="" />
+                </div>
+                <div>
+                  <p id="data" class="text-2xl font-bold mt-2">Jul 28 2025</p>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="flex-1 flex gap-4 p-6 bg-gradient-to-r from-blue-600 to-blue-300 rounded-lg shadow-sm"
-          >
-            <div><img src="/assets/board.png" alt="" /></div>
-            <div>
-              <p class="mt-2 text-xl text-white">
-                Discover Something <br />New Today!
+          <div class="grid grid-cols-3 gap-6 mt-6">
+            <!-- Single Card-->
+            <div class="card bg-bgMain shadow-lg p-5 rounded-xl">
+              <div class="badge text-sm mb-3">ShopEase</div>
+              <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
+              <p
+                class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4"
+              >
+                Debug using Chrome DevTools, check for overlapping elements.
               </p>
+              <div class="flex justify-between items-center mt-auto">
+                <div>
+                  <p class="text-sm text-gray-500">Deadline</p>
+                  <p class="font-semibold">21 March 2025</p>
+                </div>
+                <button class="btn completed-btn btn-primary btn-sm">
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="card bg-bgMain shadow-lg p-5 rounded-xl">
+              <div class="badge text-sm mb-3">ShopEase</div>
+              <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
+              <p
+                class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4"
+              >
+                Debug using Chrome DevTools, check for overlapping elements.
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <div>
+                  <p class="text-sm text-gray-500">Deadline</p>
+                  <p class="font-semibold">21 March 2025</p>
+                </div>
+                <button class="btn completed-btn btn-primary btn-sm">
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="card bg-bgMain shadow-lg p-5 rounded-xl">
+              <div class="badge text-sm mb-3">ShopEase</div>
+              <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
+              <p
+                class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4"
+              >
+                Debug using Chrome DevTools, check for overlapping elements.
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <div>
+                  <p class="text-sm text-gray-500">Deadline</p>
+                  <p class="font-semibold">21 March 2025</p>
+                </div>
+                <button class="btn completed-btn btn-primary btn-sm">
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="card bg-bgMain shadow-lg p-5 rounded-xl">
+              <div class="badge text-sm mb-3">ShopEase</div>
+              <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
+              <p
+                class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4"
+              >
+                Debug using Chrome DevTools, check for overlapping elements.
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <div>
+                  <p class="text-sm text-gray-500">Deadline</p>
+                  <p class="font-semibold">21 March 2025</p>
+                </div>
+                <button class="btn completed-btn btn-primary btn-sm">
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="card bg-bgMain shadow-lg p-5 rounded-xl">
+              <div class="badge text-sm mb-3">ShopEase</div>
+              <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
+              <p
+                class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4"
+              >
+                Debug using Chrome DevTools, check for overlapping elements.
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <div>
+                  <p class="text-sm text-gray-500">Deadline</p>
+                  <p class="font-semibold">21 March 2025</p>
+                </div>
+                <button class="btn completed-btn btn-primary btn-sm">
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="card bg-bgMain shadow-lg p-5 rounded-xl">
+              <div class="badge text-sm mb-3">ShopEase</div>
+              <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
+              <p
+                class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4"
+              >
+                Debug using Chrome DevTools, check for overlapping elements.
+              </p>
+              <div class="flex justify-between items-center mt-auto">
+                <div>
+                  <p class="text-sm text-gray-500">Deadline</p>
+                  <p class="font-semibold">21 March 2025</p>
+                </div>
+                <button class="btn completed-btn btn-primary btn-sm">
+                  Completed
+                </button>
+              </div>
             </div>
           </div>
-          <div class="p-6 bg-bgMain rounded-lg shadow-sm">
-            <div class="flex items-center gap-4">
-              <div class="p-4 bg-white rounded-full">
-                <img src="assets/calender.png" alt="" />
-              </div>
-              <div>
-                <h2 class="text-xl">Wed</h2>
-                <p class="text-2xl font-bold mt-2">Jul 28 2025</p>
-              </div>
+        </div>
+        <div class="col-span-3 bg-bgMain rounded-2xl ml-5 bg-white p-6">
+          <div class="flex flex-col justify-center items-center gap-4 e">
+            <div class="flex justify-center mt-6 gap-2">
+              <img src="assets/activity.png" alt="" />
+              <h3 class="font-medium">Activity Log</h3>
             </div>
+            <button
+              id="histories-btn"
+              class="btn btn-primary px-6 py-2 text-white rounded-lg"
+            >
+              Clear Histories
+            </button>
+          </div>
+          <hr class="border-dashed border-2 mt-6" />
+          <div class="mt-6">
+            <!--log notification-->
+            <div id="notifications" class=""></div>
           </div>
         </div>
       </section>
-      <!--card section-->
-      <div class="flex"><section class="grid grid-cols-3 bg-bgMain mt-10">
-        <!-- Single Card-->
-        <div class="card w-80 shadow-lg p-5 rounded-xl">
-          <div class="badge text-sm mb-3">ShopEase</div>
-          <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
-          <p class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4">
-            Debug using Chrome DevTools, check for overlapping elements.
-          </p>
-          <div class="flex justify-between items-center mt-auto">
-            <div>
-              <p class="text-sm text-gray-500">Deadline</p>
-              <p class="font-semibold">21 March 2025</p>
-            </div>
-            <button class="btn btn-primary btn-sm">Completed</button>
-          </div>
-        </div>
-        <div class="card w-80 shadow-lg p-5 rounded-xl">
-          <div class="badge text-sm mb-3">ShopEase</div>
-          <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
-          <p class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4">
-            Debug using Chrome DevTools, check for overlapping elements.
-          </p>
-          <div class="flex justify-between items-center mt-auto">
-            <div>
-              <p class="text-sm text-gray-500">Deadline</p>
-              <p class="font-semibold">21 March 2025</p>
-            </div>
-            <button class="btn btn-primary btn-sm">Completed</button>
-          </div>
-        </div>
-        <div class="card w-80 shadow-lg p-5 rounded-xl">
-          <div class="badge text-sm mb-3">ShopEase</div>
-          <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
-          <p class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4">
-            Debug using Chrome DevTools, check for overlapping elements.
-          </p>
-          <div class="flex justify-between items-center mt-auto">
-            <div>
-              <p class="text-sm text-gray-500">Deadline</p>
-              <p class="font-semibold">21 March 2025</p>
-            </div>
-            <button class="btn btn-primary btn-sm">Completed</button>
-          </div>
-        </div>
-        <div class="card w-80 shadow-lg p-5 rounded-xl">
-          <div class="badge text-sm mb-3">ShopEase</div>
-          <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
-          <p class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4">
-            Debug using Chrome DevTools, check for overlapping elements.
-          </p>
-          <div class="flex justify-between items-center mt-auto">
-            <div>
-              <p class="text-sm text-gray-500">Deadline</p>
-              <p class="font-semibold">21 March 2025</p>
-            </div>
-            <button class="btn btn-primary btn-sm">Completed</button>
-          </div>
-        </div>
-        <div class="card w-80 shadow-lg p-5 rounded-xl">
-          <div class="badge text-sm mb-3">ShopEase</div>
-          <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
-          <p class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4">
-            Debug using Chrome DevTools, check for overlapping elements.
-          </p>
-          <div class="flex justify-between items-center mt-auto">
-            <div>
-              <p class="text-sm text-gray-500">Deadline</p>
-              <p class="font-semibold">21 March 2025</p>
-            </div>
-            <button class="btn btn-primary btn-sm">Completed</button>
-          </div>
-        </div>
-        <div class="card w-80 shadow-lg p-5 rounded-xl">
-          <div class="badge text-sm mb-3">ShopEase</div>
-          <h2 class="text-xl font-bold mb-2">Fix Mobile Button Issue</h2>
-          <p class="text-gray-600 bg-white text-sm mb-4 rounded-xl h-20 p-4">
-            Debug using Chrome DevTools, check for overlapping elements.
-          </p>
-          <div class="flex justify-between items-center mt-auto">
-            <div>
-              <p class="text-sm text-gray-500">Deadline</p>
-              <p class="font-semibold">21 March 2025</p>
-            </div>
-            <button class="btn btn-primary btn-sm">Completed</button>
-          </div>
-        </div>
-      </section>
-
-      
-  <!-- activity -->
-
-<section> 
-  <div class="col-span-3 bg-bgMain rounded-2xl ml-5">
-   <div class="flex flex-col justify-center items-center gap-4 bg-white">
-     <div class="flex justify-center mt-6 gap-2">
-       <img src="assets/activity.png" alt="" />
-       <h3 class="font-medium">Activity Log</h3>
-     </div>
-     <button
-       class="btn btn-primary px-6 py-2 text-white rounded-lg"
-     >
-       Clear Histories
-     </button>
-   </div>
-   <hr class="border-dashed border-2 mt-6" />
-   <div class="p-6">
-     <!--log notification-->
-     <div class="bg-white">
-       <div class=" font-semibold">How do I create an account?</div>
-       <div class="text-sm">
-         Click the "Sign Up" button in the top right corner and follow the registration process.
-       </div>
-     </div></section>
-    
-    </div>
-                    
-      
     </main>
-
-    <footer></footer>
+    <script src="main.js"></script>
   </body>
 </html>
